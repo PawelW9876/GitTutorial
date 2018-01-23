@@ -2,12 +2,10 @@ package gitturtorial;
 
 public class Calculator {
 
-    public int raise(int a, int b) {
-        int result = a;
-        for (int i = 1; i < b; i++){
-            result*=a;
+    public float by(float a, float b) {
+        if (b == 0f) {
+            throw new IllegalArgumentException("Division by 0!");
         }
-        return result;
-
+        return a / b;
     }
 }
